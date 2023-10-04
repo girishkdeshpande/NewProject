@@ -1,4 +1,5 @@
 import logging
+from SampleProgram import test_string
 
 logging.basicConfig(filename="NewLog.log", level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -16,10 +17,11 @@ def DoCalc(num1, num2):
     else:
         result = num1 + num2
         logging.info("Addition Successful")
+        test_string("Girish")
         print(result)
 
+DoCalc(num1,num2)
 
-DoCalc(num1, num2)
 
 # try:
 #    numerator = 10
@@ -28,5 +30,5 @@ DoCalc(num1, num2)
 #   result = numerator/denominator
 #
 #   print(result)
-# ex#cept:
+# ex#cept:print
 # print("Error: Denominator cannot be 0.")
